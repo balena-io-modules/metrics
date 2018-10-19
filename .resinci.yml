@@ -1,0 +1,9 @@
+docker:
+  publish: false
+  builds:
+    - dockerfile: Dockerfile
+      docker_repo: resin/grafana
+      path: ./modules/grafana
+    - dockerfile: Dockerfile
+      docker_repo: resin/prometheus
+      path: ./modules/prometheus
